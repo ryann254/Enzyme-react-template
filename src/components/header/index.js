@@ -1,9 +1,14 @@
 import React from 'react'
+import './styles.scss'
 
 const Header = () => {
     return (
         <header>
-            Header
+            <div className="wrap">
+                <div className="logo">
+                    <img src="assets/classylogo.png" alt="Logo"/>
+                </div>
+            </div>
         </header>
     )
 }
