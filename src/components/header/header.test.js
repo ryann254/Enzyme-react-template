@@ -14,12 +14,12 @@ describe('Header Component',  () => {
     beforeEach(() => {
         component = setup()
     })
-    it('Should render without errors', () => {
+    it('Should render header without errors', () => {
         const wrapper = findByTestAttr(component, 'headerComponent')
         expect(wrapper.length).toBe(1)
     })
 
-    it('Should render without errors', () => {
+    it('Should render logo without errors', () => {
         const logo = findByTestAttr(component, 'logoImg')
         expect(logo.length).toBe(1)
     })
