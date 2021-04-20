@@ -35,4 +35,17 @@ describe('App Component', () => {
         expect(component.length).toBe(1)
     })
 
+    it('updateState should update the state when after posts are fetched', () => {
+        const classInstance = wrapper.instance()
+        classInstance.updateState()
+        const hideBtn = classInstance.state.hideBtn
+        expect(hideBtn).toBe(true)
+    })
+
+    it('returnsAValue should return a value when its called', () => {
+        const classInstance = wrapper.instance()
+        const newValue = classInstance.returnsAValue(5)
+        expect(newValue).toBe(6)
+    })
+
 })
